@@ -26,4 +26,18 @@
 
 .controlColumn {
   max-width: 50%;
+  position: relative;
+  /* makes the column go on top of background perspective bar.
+    The stacking order of _positioned_ elements
+    is determeined by DOM order
+  */
+}
+
+.perspectiveBar {
+  position: fixed;
+  top: 60%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: hsl(195deg, 20%, 86%);
 }
